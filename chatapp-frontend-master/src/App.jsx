@@ -27,7 +27,7 @@ const App = () => {
   const { user, loader } = useSelector((state) => state.auth);
 
   const dispatch = useDispatch();
-
+  
   useEffect(() => {
     axios
       .get(`${server}/api/v1/user/me`, { withCredentials: true })
@@ -75,6 +75,7 @@ const App = () => {
       <Toaster position="bottom-center" />
     </BrowserRouter>
   );
+  
 };
 
 export default App;

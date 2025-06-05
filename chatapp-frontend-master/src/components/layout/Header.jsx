@@ -82,14 +82,27 @@ const Header = () => {
           }}
         >
           <Toolbar>
-            <Typography
-              variant="h6"
+            <Box
               sx={{
-                display: { xs: "none", sm: "block" },
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
               }}
             >
-              Chattu
-            </Typography>
+              <img
+                src="/mylogo.png"
+                alt="Logo"
+                style={{ height: "32px", width: "32px", objectFit: "contain" }}
+              />
+              <Typography
+                variant="h6"
+                sx={{
+                  display: { xs: "none", sm: "block" },
+                }}
+              >
+                ConvoX
+              </Typography>
+            </Box>
 
             <Box
               sx={{
